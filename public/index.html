@@ -3,27 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./index.css" />
     <title>File Metadata</title>
   </head>
   <body>
-    <header>
-      <h2>File Metadata Microservice</h2>
-    </header>
-    <main>
-      <div>
+    <div class="navbar">
+      <header>
+        <h2>fCC - File Metadata Microservice</h2>
+      </header>
+    </div>
+    <div class="main">
+      <div class="form-container">
+        <h2>Upload and file and hit submit</h2>
         <form
           action="/api/fileanalyze"
           method="POST"
           enctype="multipart/form-data"
+          class="form"
         >
           <input type="file" name="upfile" />
           <input type="submit" value="Submit" />
         </form>
       </div>
-    </main>
+    </div>
     <footer>
-      &copy; 2020
+      <p>
+        &copy; 2020 - Designed and coded with 🧡 by
+        <a href="https://www.linkedin.com/in/adarshnanwani/">Adarsh Nanwani</a>
+      </p>
     </footer>
   </body>
 </html>
