@@ -14,7 +14,13 @@ app.use(
 
 app.use(express.json());
 
+// Load routes
+const fileAnalyzeAPI = require('./routes/fileAnalyze');
+
+// Mount routes
+app.use('/api/fileanalyze', fileAnalyzeAPI);
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`App listening on port ${PORT}!`);
+  console.log(`App listening on port ${port}!`);
 });
